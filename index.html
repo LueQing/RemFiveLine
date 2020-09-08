@@ -3,24 +3,25 @@
 <head>
   <title>FiveLineRem - By YJX</title>
   <meta charset="UTF-8">
-  <script src="vue.js"></script>
-  <link rel="stylesheet" href="bootstrap.min.css">
   <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
 </head>
 <body>
   <div id="app">
-    <h1>{{ message }}</h1>
-    <input v-model="answer">
-    <button onclick="ok(num);" >提交</button>
-    <p>你的答案: {{ answer }}</p>
+    <h1 id="question"></h1>
+    <input>
+    <button onclick="SendAnswer(num);" >提交</button>
+
     <p>对这道题已经耗时:{{ ltime }}</p>
     <p>上一题是: {{ up_que }} {{ score }}</p>
-    <p id="right">你一共对了: {{ total_right }}题</p>
-    <p id="wrong">你一共错了: {{ total_wrong }}题</p>
+    <p id="total_right">你一共对了: {{ total_right }}题</p>
+    <p id="total_wrong">你一共错了: {{ total_wrong }}题</p>
     <p id="total_time">你一共花了:{{ total_time }}</p>
   </div>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <p id="copyright">我是杨俊曦,别谢我</p>
+  <script>
+    SendQuestion();
+  </script>
 </body>
-  <script src="calc.js"></script>
 </html>

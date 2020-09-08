@@ -1,14 +1,4 @@
 # 帮助记忆五线谱
-![](https://github.com/JensonYang2020/RemFiveLine/workflows/Go/badge.svg)
-
-突发奇想的项目  
-
-  
-
-  
-
-  
-
 2020.4.28
 
 第一版
@@ -24,3 +14,11 @@
 嗯web的在做了
 
 以后就一直用web吧
+
+
+
+2020年9月8日
+
+计划重启
+
+丢掉vue~
