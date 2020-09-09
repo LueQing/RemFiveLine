@@ -79,8 +79,6 @@ function timer() {
 }
 
 function total_time_add() {
-    minute = 0;
-    second = 0;
     let total_minute = Number(localStorage.getItem("total_minute"));
     let total_second = Number(localStorage.getItem("total_second"));
     total_minute += minute;
@@ -91,6 +89,8 @@ function total_time_add() {
     }    
     localStorage.setItem('total_minute', total_minute);
     localStorage.setItem('total_second', total_second);
+    minute = 0;
+    second = 0;
 }
 function update_total_times() {
     let total_minute = Number(localStorage.getItem("total_minute"));
